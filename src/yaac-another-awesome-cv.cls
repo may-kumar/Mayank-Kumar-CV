@@ -208,7 +208,7 @@
 
 % Render author's name
 % Usage: \user{<firstanme>}{<lastname>}
-\newcommand\user[2]{\color{accentcolor}{\LARGE #1 \textsc{\textbf{#2}}}\color{Black}}
+\newcommand\user[2]{\color{Black}{\Huge #1 \textsc{\textbf{#2}}}\color{Black}}
 
 % Render a text with its symbol
 % Usage; \socialtext{<icon>}{<label>}
@@ -309,7 +309,7 @@
         \idphoto
       \end{minipage}
     }{}
-    \resumetitle{\@tagline}
+    % \resumetitle{\@tagline}
   }{
     % \ifundef{\@photodiameter}{
     %   \begin{minipage}{\linewidth}
@@ -318,9 +318,9 @@
     % }
     \begin{center}
     \user{\@firstname}{\@lastname}\\
-    \vskip 0.2cm
-    \resumetitle{\@tagline}
-    \smallskip\\
+    \vskip 0.5cm
+    % \resumetitle{\@tagline}
+    % \smallskip\\
     \small{\@socialinfo}
     
     \end{center}
@@ -359,7 +359,7 @@
 % Render a scholarshipentry in the scolarship environment
 % Usage: \scholarshipentry{<date>}{<description>}
 \newcommand\keywordsentry[2]{
-  \textbf{#1} &   #2\\ 
+  \textbf{#1} &   #2\\
 }
 
 % Define a new column type for the scholarship environment
