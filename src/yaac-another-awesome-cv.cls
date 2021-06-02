@@ -482,7 +482,7 @@
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
     \textbf{\textbf{#1}} \hfill \textsc{#2}\smallskip \vspace{-0.8mm}\\
     \vspace{-3.3mm}
-    #3\\
+    %#3\\
     #4\smallskip
     \vspace{3mm}
   \end{minipage}
