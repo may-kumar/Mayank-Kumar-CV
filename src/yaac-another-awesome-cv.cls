@@ -489,12 +489,20 @@
   \\*
 }
 
+% \newcommand\projecta[4]{
+%   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
+%     \textbf{\textbf{#1}} ~ #3 \hfill \textsc{#2}\smallskip \vspace{-0.8mm}\\
+%     \vspace{-3.3mm}
+%     % #3\\
+%     #4\smallskip
+%     \vspace{1.2mm}
+%   \end{minipage}
+%   \\*
+% }
 \newcommand\projecta[4]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
-    \textbf{\textbf{#1}} ~ #3 \hfill \textsc{#2}\smallskip \vspace{-0.8mm}\\
-    \vspace{-3.3mm}
-    % #3\\
-    #4\smallskip
+    \textbf{\textbf{#1}} #4
+    \smallskip
     \vspace{1.2mm}
   \end{minipage}
   \\*
