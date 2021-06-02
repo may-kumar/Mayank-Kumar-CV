@@ -82,6 +82,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{pagecolor}
 \RequirePackage{xifthen}
+\usepackage{tabularx}
 % \usepackage{colortbl}
 
 
@@ -501,7 +502,8 @@
 % }
 \newcommand\projecta[4]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
-    \textbf{\textbf{#1}} #4
+    \textbf{\textbf{#1}} \hspace{5pt} \textit{#2} \hfill \textsc{#3}
+    #4
     \smallskip
     \vspace{1.2mm}
   \end{minipage}
