@@ -197,6 +197,7 @@
 \newcommand{\videoSymbol}{\faVideoCamera}
 \newcommand{\commitSymbol}{\faCodeFork}
 \newcommand{\linkSymbol}{\faLink}
+\newcommand{\pdfFileSymbol}{\faFilePdfO}
 
 \newcommand\link[2]{\color{linkcolor}\href{#1}{#2}\color{Black} }
 \newcommand\important[1]{\textbf #1}
@@ -417,11 +418,12 @@
                  & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
   
-\newcommand\researchexperience[6]{
+\newcommand\researchexperience[7]{
   \textbf{#1}    & \textbf{#2}  \hfill  \textbf{#3}							\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*
+                 & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
 % Render a consultant experience in the experiences environment
 % Usage: 
@@ -481,7 +483,7 @@
 
 \newcommand\project[4]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
-    \textbf{\textbf{#1}} \hfill \textsc{#2}\smallskip \vspace{-0.8mm}\\
+    \textbf{\textbf{#1}} #3  \hfill \textsc{#2}\smallskip \vspace{-0.8mm}\\
     \vspace{-3.3mm}
     %#3\\
     #4\smallskip
